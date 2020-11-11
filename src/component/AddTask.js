@@ -6,8 +6,7 @@ const AddTask=(props)=>{
     const [state,setState]=useState({
         id:uuidv4(),
         description:"",
-        isDone:false,
-        complete:"false"
+        isDone:false
     });
     const handle=(e)=>{setState({...state,description : e.target.value})}
     const add=()=>{

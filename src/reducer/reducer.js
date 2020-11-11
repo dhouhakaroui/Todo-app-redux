@@ -1,5 +1,5 @@
 import {v4 as uuidv4} from 'uuid';
-import {ADD_TODO,DELETE,DONE,EDIT,FILTER} from '../action/actiontype'
+import {ADD_TODO,DELETE,DONE,EDIT} from '../action/actiontype'
 const initState =  [
         {
             id:uuidv4(),
@@ -33,11 +33,9 @@ const reducer=(state=initState,action)=>{
         case DELETE:
             return state.filter(el => el.id !== action.payload)
         case DONE:
-            return state.map(el => el.id === action.payload ? {...el, isDone: !el.isDone,complete:!el.isDone.toString()} : el)  
+            return state.map(el => el.id === action.payload ? {...el, isDone: !el.isDone} : el)  
         case EDIT:
-            return state.map(el => el.id === action.payload.id ? action.payload : el ) 
-        case FILTER:
-            return state.filter(el=>el.complete===(action.payload))
+            return state.map(el => el.id === action.payload.id ? action.payload : el )      
         default:
             return state;
         }

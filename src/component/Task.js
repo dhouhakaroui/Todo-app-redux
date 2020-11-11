@@ -5,8 +5,7 @@ const Task =(props)=> {
     const [state, setState] = useState({
         id: props.todo.id,
         description:props.todo.description,
-        isDone: props.todo.isDone,
-        complete: props.todo.isDone ,
+        isDone: props.todo.isDone
         
     })
     const [disabled , setDisabled] = useState (true)
