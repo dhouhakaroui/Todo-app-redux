@@ -18,7 +18,7 @@ const Task =(props)=> {
         setDisabled( !disabled)
     }
     return (
-        <div key={props.todo.id} style={{display:"flex",width:"80%",marginLeft:50,padding:15,border:"2px solid" }}>
+        <div key={props.todo.id} style={{display:"flex",width:"60%",marginLeft:50,padding:15,border:"2px solid" }}>
             <button onClick={()=>props.completed(state.id)}>{(props.todo.isDone)?
                 <i className="fa fa-check-square-o fa-2x" aria-hidden="true"></i>:
                 <i className="fa fa-square-o fa-2x" aria-hidden="true"></i>

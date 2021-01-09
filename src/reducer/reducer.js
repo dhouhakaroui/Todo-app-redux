@@ -5,25 +5,26 @@ const initState =  [
             id:uuidv4(),
             description:'learn react and redux',
             isDone:true,
-            complete:"true"
+        },
+        {
+            id:uuidv4(),
+            description:'learn angular',
+            isDone:false,
         },
         {
             id:uuidv4(),
             description:'learn node js',
-            isDone:false,
-            complete:"false"
+            isDone:true,
         },
         {
             id:uuidv4(),
-            description:'create a project',
+            description:'create a MERN project',
             isDone:false,
-            complete:"false"
         },
         {
             id:uuidv4(),
             description:'working',
-            isDone:true,
-            complete:"true"
+            isDone:false,
         }
     ]
 const reducer=(state=initState,action)=>{

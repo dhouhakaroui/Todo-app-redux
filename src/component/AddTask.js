@@ -15,7 +15,7 @@ const AddTask=(props)=>{
     }
     return ( 
         <div  style={{display:"flex",padding:"0px 20px 0px 20px",width:"50%"}}>               
-            <input type="text" className="form-control" placeholder="Add a new todo"  onChange={handle} value={state.description} style={{height:37}} />               
+            <input type="text" className="form-control" placeholder="Add a new todo..."  onChange={handle} value={state.description} style={{height:37}} />               
             <button onClick={add} > <i className="fa fa-plus-square fa-2x" aria-hidden="true"  ></i></button>                    
         </div>   
     )

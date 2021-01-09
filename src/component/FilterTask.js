@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 const FilterT=(props) =>{
     return (
         <div>
-            <select name="todos" style={{height:37}} onChange={e =>{ console.log(e.target.value) 
+            <select name="todos" className="form-control" style={{height:37}} onChange={e =>{ console.log(e.target.value) 
                 props.filterTodo(e.target.value)}} >
                 <option value="all">all</option>
                 <option value={true}>done</option>
